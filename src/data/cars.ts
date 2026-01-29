@@ -1,9 +1,43 @@
 import car1 from "@/assets/car-1.jpg";
+import car1Front from "@/assets/car-1-front.jpg";
+import car1Rear from "@/assets/car-1-rear.jpg";
+import car1Side from "@/assets/car-1-side.jpg";
+import car1Top from "@/assets/car-1-top.jpg";
+
 import car2 from "@/assets/car-2.jpg";
+import car2Front from "@/assets/car-2-front.jpg";
+import car2Rear from "@/assets/car-2-rear.jpg";
+import car2Side from "@/assets/car-2-side.jpg";
+import car2Top from "@/assets/car-2-top.jpg";
+
 import car3 from "@/assets/car-3.jpg";
+import car3Front from "@/assets/car-3-front.jpg";
+import car3Rear from "@/assets/car-3-rear.jpg";
+import car3Side from "@/assets/car-3-side.jpg";
+import car3Top from "@/assets/car-3-top.jpg";
+
 import car4 from "@/assets/car-4.jpg";
+import car4Front from "@/assets/car-4-front.jpg";
+import car4Rear from "@/assets/car-4-rear.jpg";
+import car4Side from "@/assets/car-4-side.jpg";
+import car4Top from "@/assets/car-4-top.jpg";
+
 import car5 from "@/assets/car-5.jpg";
+import car5Front from "@/assets/car-5-front.jpg";
+import car5Rear from "@/assets/car-5-rear.jpg";
+import car5Side from "@/assets/car-5-side.jpg";
+import car5Top from "@/assets/car-5-top.jpg";
+
 import car6 from "@/assets/car-6.jpg";
+import car6Front from "@/assets/car-6-front.jpg";
+import car6Rear from "@/assets/car-6-rear.jpg";
+import car6Side from "@/assets/car-6-side.jpg";
+import car6Top from "@/assets/car-6-top.jpg";
+
+export interface CarImage {
+  src: string;
+  label: string;
+}
 
 export interface Car {
   id: string;
@@ -11,6 +45,7 @@ export interface Car {
   brand: string;
   category: string;
   image: string;
+  images: CarImage[];
   pricePerDay: number;
   seats: number;
   maxSpeed: number;
@@ -30,6 +65,13 @@ export const cars: Car[] = [
     brand: "Rolls-Royce",
     category: "Лимузин",
     image: car1,
+    images: [
+      { src: car1, label: "Главная" },
+      { src: car1Front, label: "Спереди" },
+      { src: car1Rear, label: "Сзади" },
+      { src: car1Side, label: "Сбоку" },
+      { src: car1Top, label: "Сверху" },
+    ],
     pricePerDay: 2500,
     seats: 20,
     maxSpeed: 240,
@@ -47,6 +89,13 @@ export const cars: Car[] = [
     brand: "Cadillac",
     category: "Внедорожник",
     image: car2,
+    images: [
+      { src: car2, label: "Главная" },
+      { src: car2Front, label: "Спереди" },
+      { src: car2Rear, label: "Сзади" },
+      { src: car2Side, label: "Сбоку" },
+      { src: car2Top, label: "Сверху" },
+    ],
     pricePerDay: 1800,
     seats: 7,
     maxSpeed: 210,
@@ -64,6 +113,13 @@ export const cars: Car[] = [
     brand: "Mercedes-Benz",
     category: "Седан",
     image: car3,
+    images: [
+      { src: car3, label: "Главная" },
+      { src: car3Front, label: "Спереди" },
+      { src: car3Rear, label: "Сзади" },
+      { src: car3Side, label: "Сбоку" },
+      { src: car3Top, label: "Сверху" },
+    ],
     pricePerDay: 2200,
     seats: 4,
     maxSpeed: 250,
@@ -81,6 +137,13 @@ export const cars: Car[] = [
     brand: "BMW",
     category: "Седан",
     image: car4,
+    images: [
+      { src: car4, label: "Главная" },
+      { src: car4Front, label: "Спереди" },
+      { src: car4Rear, label: "Сзади" },
+      { src: car4Side, label: "Сбоку" },
+      { src: car4Top, label: "Сверху" },
+    ],
     pricePerDay: 1900,
     seats: 5,
     maxSpeed: 305,
@@ -98,6 +161,13 @@ export const cars: Car[] = [
     brand: "Bentley",
     category: "Купе",
     image: car5,
+    images: [
+      { src: car5, label: "Главная" },
+      { src: car5Front, label: "Спереди" },
+      { src: car5Rear, label: "Сзади" },
+      { src: car5Side, label: "Сбоку" },
+      { src: car5Top, label: "Сверху" },
+    ],
     pricePerDay: 2800,
     seats: 4,
     maxSpeed: 333,
@@ -115,6 +185,13 @@ export const cars: Car[] = [
     brand: "Porsche",
     category: "Спорткар",
     image: car6,
+    images: [
+      { src: car6, label: "Главная" },
+      { src: car6Front, label: "Спереди" },
+      { src: car6Rear, label: "Сзади" },
+      { src: car6Side, label: "Сбоку" },
+      { src: car6Top, label: "Сверху" },
+    ],
     pricePerDay: 2400,
     seats: 4,
     maxSpeed: 315,
