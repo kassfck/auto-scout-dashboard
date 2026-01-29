@@ -90,7 +90,7 @@ const CarImageGallery = ({ images, carName }: CarImageGalleryProps) => {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-5 gap-2">
+      <div className={`grid gap-2 ${images.length <= 5 ? 'grid-cols-5' : 'grid-cols-6'}`}>
         {images.map((image, index) => (
           <button
             key={index}
