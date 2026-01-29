@@ -2,37 +2,39 @@ import car1 from "@/assets/car-1.jpg";
 import car1Front from "@/assets/car-1-front.jpg";
 import car1Rear from "@/assets/car-1-rear.jpg";
 import car1Side from "@/assets/car-1-side.jpg";
-import car1Top from "@/assets/car-1-top.jpg";
+import car1Interior from "@/assets/car-1-interior.jpg";
 
 import car2 from "@/assets/car-2.jpg";
 import car2Front from "@/assets/car-2-front.jpg";
 import car2Rear from "@/assets/car-2-rear.jpg";
 import car2Side from "@/assets/car-2-side.jpg";
 import car2Top from "@/assets/car-2-top.jpg";
+import car2Interior from "@/assets/car-2-interior.jpg";
 
 import car3 from "@/assets/car-3.jpg";
 import car3Front from "@/assets/car-3-front.jpg";
 import car3Rear from "@/assets/car-3-rear.jpg";
 import car3Side from "@/assets/car-3-side.jpg";
-import car3Top from "@/assets/car-3-top.jpg";
+import car3Interior from "@/assets/car-3-interior.jpg";
 
 import car4 from "@/assets/car-4.jpg";
 import car4Front from "@/assets/car-4-front.jpg";
 import car4Rear from "@/assets/car-4-rear.jpg";
 import car4Side from "@/assets/car-4-side.jpg";
 import car4Top from "@/assets/car-4-top.jpg";
+import car4Interior from "@/assets/car-4-interior.jpg";
 
 import car5 from "@/assets/car-5.jpg";
 import car5Front from "@/assets/car-5-front.jpg";
 import car5Rear from "@/assets/car-5-rear.jpg";
 import car5Side from "@/assets/car-5-side.jpg";
-import car5Top from "@/assets/car-5-top.jpg";
+import car5Interior from "@/assets/car-5-interior.jpg";
 
 import car6 from "@/assets/car-6.jpg";
 import car6Front from "@/assets/car-6-front.jpg";
 import car6Rear from "@/assets/car-6-rear.jpg";
 import car6Side from "@/assets/car-6-side.jpg";
-import car6Top from "@/assets/car-6-top.jpg";
+import car6Interior from "@/assets/car-6-interior.jpg";
 
 export interface CarImage {
   src: string;
@@ -70,7 +72,7 @@ export const cars: Car[] = [
       { src: car1Front, label: "Спереди" },
       { src: car1Rear, label: "Сзади" },
       { src: car1Side, label: "Сбоку" },
-      { src: car1Top, label: "Сверху" },
+      { src: car1Interior, label: "Салон" },
     ],
     pricePerDay: 2500,
     seats: 20,
@@ -95,6 +97,7 @@ export const cars: Car[] = [
       { src: car2Rear, label: "Сзади" },
       { src: car2Side, label: "Сбоку" },
       { src: car2Top, label: "Сверху" },
+      { src: car2Interior, label: "Салон" },
     ],
     pricePerDay: 1800,
     seats: 7,
@@ -118,7 +121,7 @@ export const cars: Car[] = [
       { src: car3Front, label: "Спереди" },
       { src: car3Rear, label: "Сзади" },
       { src: car3Side, label: "Сбоку" },
-      { src: car3Top, label: "Сверху" },
+      { src: car3Interior, label: "Салон" },
     ],
     pricePerDay: 2200,
     seats: 4,
@@ -143,6 +146,7 @@ export const cars: Car[] = [
       { src: car4Rear, label: "Сзади" },
       { src: car4Side, label: "Сбоку" },
       { src: car4Top, label: "Сверху" },
+      { src: car4Interior, label: "Салон" },
     ],
     pricePerDay: 1900,
     seats: 5,
@@ -166,7 +170,7 @@ export const cars: Car[] = [
       { src: car5Front, label: "Спереди" },
       { src: car5Rear, label: "Сзади" },
       { src: car5Side, label: "Сбоку" },
-      { src: car5Top, label: "Сверху" },
+      { src: car5Interior, label: "Салон" },
     ],
     pricePerDay: 2800,
     seats: 4,
@@ -190,7 +194,7 @@ export const cars: Car[] = [
       { src: car6Front, label: "Спереди" },
       { src: car6Rear, label: "Сзади" },
       { src: car6Side, label: "Сбоку" },
-      { src: car6Top, label: "Сверху" },
+      { src: car6Interior, label: "Салон" },
     ],
     pricePerDay: 2400,
     seats: 4,
