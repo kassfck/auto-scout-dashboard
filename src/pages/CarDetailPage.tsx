@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import SpecBadge from "@/components/SpecBadge";
 import BookingForm from "@/components/BookingForm";
+import CarImageGallery from "@/components/CarImageGallery";
 import { cars } from "@/data/cars";
 import { useApp } from "@/context/AppContext";
 import { motion } from "framer-motion";
@@ -68,38 +69,25 @@ const CarDetailPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="relative"
           >
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-card border border-border">
-              <img
-                src={car.image}
-                alt={`${car.brand} ${car.name}`}
-                className="w-full h-full object-cover"
+            {/* Favorite Button */}
+            <Button
+              variant="dark"
+              size="icon"
+              onClick={handleFavoriteClick}
+              className="absolute top-4 right-4 z-10 rounded-full"
+            >
+              <Heart
+                className={`w-5 h-5 ${
+                  favorite ? "fill-primary text-primary" : ""
+                }`}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
-              
-              {/* Navigation Arrows */}
-              <div className="absolute bottom-4 left-4 flex gap-2">
-                <Button variant="dark" size="icon" className="rounded-full">
-                  <ArrowLeft className="w-4 h-4" />
-                </Button>
-                <Button variant="dark" size="icon" className="rounded-full">
-                  <ArrowLeft className="w-4 h-4 rotate-180" />
-                </Button>
-              </div>
+            </Button>
 
-              {/* Favorite Button */}
-              <Button
-                variant="dark"
-                size="icon"
-                onClick={handleFavoriteClick}
-                className="absolute top-4 right-4 rounded-full"
-              >
-                <Heart
-                  className={`w-5 h-5 ${
-                    favorite ? "fill-primary text-primary" : ""
-                  }`}
-                />
-              </Button>
-            </div>
+            {/* Image Gallery */}
+            <CarImageGallery 
+              images={car.images} 
+              carName={`${car.brand} ${car.name}`} 
+            />
 
             {/* Specs Grid */}
             <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mt-6">
